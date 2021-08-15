@@ -725,3 +725,7 @@
     color: #127077;
     text-decoration: underline;
   }
+
+  .plan.active-plan {
+    background-color: plum;
+  }
