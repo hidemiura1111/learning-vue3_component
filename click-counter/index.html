@@ -16,6 +16,19 @@
     <button @click="count++">the count is: {{ count }}</button>
   </script>
   <script src="https://unpkg.com/vue@3"></script>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
+  <script>
+    const app = Vue.createApp({})
+    .component('click-counter', {
+      // template: '<button @click="count++">{{count}}</button>',
+      template: '#click-counter-template',
+      data() {
+        return {
+          count: 0
+        }
+      }
+    })
+    .mount('#app')
+  </script>
 </body>
 </html>
